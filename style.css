@@ -1,0 +1,268 @@
+﻿.Information div, .Skillset, .Patronite div, .Projects, .Contact div {
+    margin-left: calc(47% - 525px);
+}
+
+
+.Skillset #skill {
+    width: 350px;
+    height: 340px;
+    float: left;
+    margin-right: 3%;
+    min-width: 300px;
+    text-align: center;
+}
+
+.Skillset #skill:nth-last-child(1) {
+    margin-right: 0px;
+}
+
+.Web {
+    border: 3px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to left, #3c3ad5, #3ac3d5);
+}
+
+.Programming {
+    border: 3px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+}
+
+.Graphics3D {
+    border: 3px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to left, #d54c3a, #92d53a);
+}
+
+.Skillset div p {
+    margin-top: -30px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+.icon {
+    float: left;
+    margin-right: 15px;
+}
+
+.icons p {
+    color: #d4d4d4;
+    font-size: 14px;
+    padding-top: 33px;
+    opacity: 0;
+    transition: opacity 0.4s ease-out 20ms
+}
+
+h5 {
+    color: goldenrod;
+    margin-top: 100px;
+    margin-bottom: -25px;
+}
+
+h5::before {
+    content: '';
+    width: 7px;
+    height: 2px;
+    margin-bottom: 3.5px;
+    margin-right: 55px;
+    display: inline-block;
+    border-left: 7px solid goldenrod;
+    border-right: 7px solid goldenrod;
+}
+
+h5::after {
+    content: '';
+    width: 40px;
+    height: 2px;
+    margin-bottom: 3.5px;
+    margin-left: -189px;
+    display: inline-block;
+    background-color: goldenrod;
+}
+
+
+.Graphics3D:hover .icons p, .Web:hover .icons p, .Programming:hover .icons p {
+    opacity: 1;
+}
+
+.Information, .Patronite, .Contact {
+    width: 100%;
+    margin-top: 100px;
+    display: inline-block;
+    background-color: #2b2b2b;
+}
+
+.Patronite h5::after, .Projects h5::after {
+    margin-left: -110px;
+}
+
+.Contact h5::after {
+    margin-left: -105px;
+}
+
+.Projects li {
+    width: 80px;
+    height: 80px;
+    float: left;
+    list-style: none;
+    margin-right: 14px;
+}
+
+.Projects li a { 
+    width: 84px;
+    height: 84px;
+    display: block;
+    border-radius: 50%;
+}
+
+.Projects li div {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-size: 80px;
+    background-position: center;
+    border: 2px solid goldenrod;
+    transition: background-size 0.2s ease-out 20ms
+}
+
+.Projects li div:hover {
+    background-size: 90px;
+}
+
+.Projects li:hover table {
+    opacity: 1;
+}
+
+.Projects table {
+    opacity: 0;
+    width: 37%;
+    right: 150px;
+    border: 1px solid #3d3d3d;
+    margin-top: -140px;
+    position: absolute;
+    pointer-events: none;
+    transition: opacity 0.5s ease-out 20ms;
+}
+
+.Projects table th {
+    padding: 5px;
+    text-align: right;
+}
+
+.Projects table td {
+    width: 300px;
+    text-align: center;
+}
+
+.Projects a b {
+    display: block;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.Projects ul {
+    height: 180px;
+}
+
+.graphics {
+    width: 600px;
+    margin-bottom: 560px;
+}
+
+.graphics table {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.scripts li div {
+    border-radius: 25%;
+}
+
+.graphics li div {
+    width: 150px;
+    height: 150px;
+    border-radius: 15%;
+    background-size: 150px;
+}
+
+.graphics li div:hover {
+    background-size: 180px;
+}
+
+.graphics li {
+    margin-right: 100px;
+    margin-bottom: 100px;
+}
+
+#downloadButton a {
+    width: 120px;
+    height: 22px;
+    float: left;
+    padding: 4px;
+    border-radius: 10px;
+    text-align: center;
+    margin-right: 25px;
+    border: 1px solid #3d3d3d;
+    background-color: #2c2c2c;
+}
+
+#downloadButton a:nth-child(1) {
+    margin-left: calc(50% - 140px);
+}
+
+#downloadButton a:hover {
+    background-color: #3d3d3d;
+}
+
+#downloadButton a, #downloadButton a:link, #downloadButton a:active {
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #242424;
+}
+
+main::before {
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 5%;
+    position: fixed;
+    filter: blur(5px);
+    pointer-events: none;
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-image: url("img/body.png");
+}
+
+footer {
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+    display: inline-block;
+    background-color: #1C1C1C;
+}
+
+model-viewer {
+    width: 100%;
+    height: 400px;
+    background-color: #2b2b2b;
+}
+
+.noSupport {
+    text-align: center;
+}
+
+header, main, footer, .noSupport {
+    display: none;
+}
